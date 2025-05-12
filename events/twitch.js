@@ -59,7 +59,7 @@ async function sendStreamNotification(client) {
                 .setThumbnail(streamData.profileImage)
                 .setTimestamp();
 
-            channel.send({ embeds: [twitchEmbed] });
+            channel.send({ content: '<@&1363661236205519059> John is now live!',embeds: [twitchEmbed] });
         } else {
             console.error('Channel not found');
         }
